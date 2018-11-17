@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Le Funzioni 2</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+<p>Le funzioni</p>
+
+
+
+
+<script>
+
+function calcoloKm(x){
+return x/100;
+}
+var ris_km = calcoloKm(25000);
+
+var risultato = calcoloKm(9000);
+console.log(risultato);
+
+function calcoloLitri(x){
+ return x*2;
+}
+var ris_litri = calcoloLitri(15);
+
+
+var litri = calcoloLitri(5);
+alert(litri);
+
+function calcoloKmAlLitro(km,litri){
+ var km_l = km/litri;
+ alert(km_l);
+}
+calcoloKmAlLitro(ris_km, ris_litri);
+
+</script>
+  </body>
+</html>

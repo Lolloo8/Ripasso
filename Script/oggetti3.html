@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Oggetti 3</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <style media="screen">
+  .main{
+    background-color:red;
+    font-size: 2em; // due votle il valore;
+  }
+</style>
+</head>
+<body>
+  <h2>Gli oggetti 3</h2>
+  <div id="main" class="main">Qui apparirà il risultato  di un richiamo di proprietà o di un metodo</div>
+  <script>
+  var persona = {
+    nome : "Lorenzo",
+    cognome: "Morandi",
+    eta: 22,
+    citta: "Roma",
+    metodo1 : function(){
+      return this.nome + " " + this.cognome + " " + this.citta;
+    }
+  }
+
+  console.log(persona['cognome']);
+
+  //JQUERY
+//  $('div').text('ciao sono lollo'); //.text sovrascrive il testo
+//  $('div').html('<b>ciao sono lollo <b>');//.html è come text ma puoi mettere al suo interno html
+$('#main').html(persona.citta);
+//$('#main').html(persona.metodo1());
+
+  </script>
+</body>
+</html>

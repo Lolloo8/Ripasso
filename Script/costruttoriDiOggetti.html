@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Costruttore di oggetti</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <style media="screen">
+  .main{
+    background-color:red;
+    font-size: 2em; // due votle il valore;
+  }
+</style>
+</head>
+<body>Costruttore di oggetti </h2>
+  <div id="main" class="main"></div>
+  <script>
+  var persona = {
+    nome : "Lorenzo",
+    cognome: "Morandi",
+    eta: 22,
+    citta: "Roma",
+    'data di nascita' : '09011996',                              //gli apici forzano javascript
+    metodo1 : function(){
+      return this.nome + " " + this.cognome + " " + this.citta;
+    }
+  }
+  /*
+ console.log(persona.nome);  //Lorenzo
+ var utente = persona;
+ console.log(utente.nome);//Lorenzo
+ utente.nome = "Sempronio";    //Se cambi il suo valore cambia anche nell'oggetto.
+ console.log(persona.nome);//Sempronio
+ console.log(utente.nome);//Sempronio */
+
+ 
+ var utente = new persona;  //Clona l'oggetto
+ cosnole.log(utente);  //Persona non è un Costruttore
+
+
+
+
+  </script>
+</body>
+</html>

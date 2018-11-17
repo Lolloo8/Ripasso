@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Variabili javascript e JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <style>
+  .lab{
+    background-color:red;
+  }
+  </style>
+  </head>
+  <body>
+<p>Lorem ipsum dolor sit amet</p>
+<p class="lab">Sono il paragrafo con classe lab</p>
+<script>
+var nome =" Lorenzo";
+var cognome = "Morandi";
+var eta = 16;
+var testo_finale = nome+" "+cognome+" "+"ed ho "+eta+" anni";
+
+//document.write(nome+" "+cognome+" "+"ed ho "+eta+" anni");
+
+
+/*JQuery*/
+$('p').text(testo_finale);
+</script>
+  </body>
+</html>

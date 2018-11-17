@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Oggetti 2</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <p>Gli oggetti 2</p>
+  <script>
+var persona = {
+  nome : "Lorenzo",
+  cognome: "Morandi",
+  citta: "Roma",
+  eta: 22,
+  colore_occhi: "verde",
+  metodo1 : function(){                             //Funzione anonima
+    return this.nome + " " +  this.cognome + " " + this.citta + " " + this.eta;
+  }
+
+}
+alert(persona.metodo1());
+
+
+//METODO ALTERNATIVO
+console.log(persona['nome']);
+
+  </script>
+</body>
+</html>

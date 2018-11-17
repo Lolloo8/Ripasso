@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Oggetti 4</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <style media="screen">
+  .main{
+    background-color:red;
+    font-size: 2em; // due votle il valore;
+  }
+</style>
+</head>
+<body>
+  <h2>Gli oggetti 4</h2>
+  <div id="main" class="main">Qui apparirà il risultato  di un richiamo di proprietà o di un metodo</div>
+  <script>
+  var persona = {
+    nome : "Lorenzo",
+    cognome: "Morandi",
+    eta: 22,
+    citta: "Roma",
+    'data di nascita' : '09011996',                              //gli apici forzano javascript
+    metodo1 : function(){
+      return this.nome + " " + this.cognome + " " + this.citta;
+    }
+  }
+
+//console.log(persona[citta]); //città non definita   metti apici
+//OPPURE
+/*var citta ='eta';
+console.log(persona.citta);*/
+
+console.log(persona['data di nascita']);
+
+persona.altezza = 180  ;
+alert(persona.altezza);
+//Implementazione
+
+  </script>
+</body>
+</html>
